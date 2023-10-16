@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <Button
-            android:id="@+id/buttonMenu1"
+            android:id="@+id/Menu1"
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:backgroundTint="#68FFB7"
@@ -72,7 +72,7 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/buttonMenu1"
+            android:id="@+id/Menu2"
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:backgroundTint="#FF9BE3"
@@ -80,7 +80,7 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/buttonMenu1"
+            android:id="@+id/Menu3"
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:backgroundTint="#68FFF6"
@@ -88,7 +88,7 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/buttonMenu1"
+            android:id="@+id/Menu4"
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:backgroundTint="#FFE484"
@@ -109,39 +109,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBuku"
         android:layout_width="match_parent"
-        android:layout_height="85dp"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="404dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="Parent"
+        app:layout_constraintEnd_toEndOf="Parent"
+        app:layout_constraintStart_toStartOf="Parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRecom" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="85dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/book1" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            tools:layout_editor_absoluteY="25dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
