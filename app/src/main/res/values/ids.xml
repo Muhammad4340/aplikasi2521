@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageViewBook" type="id" />
+    <item name="textViewTitle" type="id" />
+    <item name="textViewDesc" type="id" />
+</resources>

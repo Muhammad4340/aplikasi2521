@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class AdapterHome(private val listBuku:List<ImageView>):
+class AdapterHome(private val listBuku:List<ModelBuku>):
                     RecyclerView.Adapter<AdapterHome.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -18,7 +18,7 @@ class AdapterHome(private val listBuku:List<ImageView>):
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(
-            R.layout.layout.card_layout_home, parent, false
+            R.layout.card_layout_home, parent, false
         )
         return ViewHolder(view)
     }
@@ -27,13 +27,17 @@ class AdapterHome(private val listBuku:List<ImageView>):
     override fun onBindViewHolder(holder: ViewHolder, position : Int){
         val imageView = listBuku[position]
 
-        holder.image.setImageResource(ImageView.image)
-        holder.title.text = ImageView.title
-        holder.desc.text = ImageView.desc
+        holder.image.setImageResource(ModelBuku.image)
+        holder.title.text = ModelBuku.title
+        holder.desc.text = ModelBuku.desc
     }
     override fun getItemCount(): Int{
         return listBuku.size
     }
+}
+
+class ModelBuku {
+
 }
 
 
