@@ -10,21 +10,22 @@ import androidx.recyclerview.widget.RecyclerView
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_main
+        )
 
         //instance
         val btnMore:Button = findViewById(R.id.Menu4)
         val btnKid:Button = findViewById(R.id.Menu1)
-        val rvBuku:RecyclerView = findViewById(R.id.recyclerViewBuku)
+        val rvBuku:RecyclerView = findViewById(R.id.recyclerViewBukuu)
         //set layout manager di RecyclerView
         rvBuku.layoutManager = LinearLayoutManager(this)
         //list data buku
-        val data = ArrayList<ImageView>()
-        data.add(ImageView(R.drawable.book1,"Emi's beach adventure",
+        val data = ArrayList<BukuModel>()
+        data.add(BukuModel(R.drawable.book1,"Emi's beach adventure",
             "Lorem Ipsum Dolor Sit Amet"))
-        data.add(ImageView(R.drawable.book2,"Ade's beach adventure",
+        data.add(BukuModel(R.drawable.book2,"Ade's beach adventure",
             "Lorem Ipsum Dolor Sit Amet"))
-        data.add(ImageView(R.drawable.book4,"Mermaid to Rescue",
+        data.add(BukuModel(R.drawable.book4,"Mermaid to Rescue",
             "Lorem Ipsum Dolor Sit Amet"))
 
         //set adapter

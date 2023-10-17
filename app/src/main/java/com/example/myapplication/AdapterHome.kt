@@ -1,3 +1,5 @@
+package com.example.myapplication
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,3 +35,5 @@ class AdapterHome(private val listBuku:List<ImageView>):
         return listBuku.size
     }
 }
+
+

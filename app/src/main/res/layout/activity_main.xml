@@ -110,7 +110,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewBuku"
+        android:id="@+id/recyclerViewBukuu"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
@@ -119,7 +119,7 @@
         app:layout_constraintBottom_toBottomOf="Parent"
         app:layout_constraintEnd_toEndOf="Parent"
         app:layout_constraintStart_toStartOf="Parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewRecom" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewRecom"/>
 
 
 
