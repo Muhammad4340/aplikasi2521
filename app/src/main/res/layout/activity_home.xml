@@ -1,82 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity"
-    android:orientation="vertical"
-    android:background="#FE7e07">
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Rafi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Enjoy Reading our e-books"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUser" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="118dp"
-        android:layout_height="124dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="24dp"
-        app:srcCompat="@drawable/read" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Login"
-        android:textColor="#FFFFFF"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"/>
-
-    <EditText
-        android:id="@+id/editTextUsername"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Username"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#FFFFFF"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"/>
-
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="text|textPassword"
-        android:text="Password"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#FFFFFF"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"/>
+        android:id="@+id/imageView"
+        android:layout_width="415dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfo"
+        app:srcCompat="@drawable/pic" />
 
     <Button
-        android:id="@+id/ButtonLogin"
-        android:layout_width="150dp"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:textSize="18sp"/>
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="164dp"
+        android:backgroundTint="#FE7E07"
+        android:text="Click to enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <Button
+            android:id="@+id/Menu1"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:backgroundTint="#68FFB7"
+            android:text="Book Kid"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Menu2"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:backgroundTint="#FF9BE3"
+            android:text="Reading"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Menu3"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:backgroundTint="#68FFF6"
+            android:text="Space"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Menu4"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:backgroundTint="#FFE484"
+            android:text="More"
+            android:textColor="@color/black" />
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/textViewRegister"
+        android:id="@+id/textViewRecom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Don't have account? Register here"
-        android:textColor="#FFFFFF"
-        android:textAlignment="center"
-        android:textSize="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="RECOMMEND"
+        android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-</LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBukuu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="Parent"
+        app:layout_constraintEnd_toEndOf="Parent"
+        app:layout_constraintStart_toStartOf="Parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRecom"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
